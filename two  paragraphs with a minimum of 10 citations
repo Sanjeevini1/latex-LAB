@@ -1,0 +1,65 @@
+Develop a LaTeX script to create a document that consists of two  paragraphs with a minimum of 10 citations in it and display the reference  in the 
+section. 
+
+Main.tex 
+
+\documentclass{article} 
+\begin{document} 
+\section{Introduction} 
+LaTeX is a typesetting system commonly used for technical  and scientific documents such as research papers, reports,  theses, and presentations. It provides a powerful way to  create professional-looking documents with precise control  over formatting and layout. Here's an overview of some key  aspects of LaTeX: \cite{knuth:1984}. Markup Language: 
+LaTeX uses markup commands to define the structure and  formatting of a document. For example, commands are used  to specify sections, chapters, headings, fonts, lists, tables,  equations, and more. \cite{latex:companion}. Document  Classes: LaTeX documents are typically based on document  classes, such as article, report, book, or beamer (for  presentations). Each class provides predefined formatting  and layout settings tailored to different types of documents.  \cite{latex2e}. Packages: LaTeX offers a vast array of  packages that extend its functionality. These packages  provide additional features and styles for formatting tables,  graphics, mathematical equations, bibliographies, and more.  \cite{lesk:1977}\\ 
+Math Typesetting: LaTeX is renowned for its exceptional  support for typesetting mathematical equations and symbols.  It offers a comprehensive suite of commands and  environments for writing complex mathematical expressions  with ease and precision. \cite{texbook} 
+Cross-Referencing and Citations: LaTeX makes it  straightforward to cross-reference sections, figures, tables,  equations, and citations within a document. This allows for  automatic numbering and updating of references as the  document evolves. 
+Customization: LaTeX allows for extensive customization  of document layout, styles, and formatting. Users can define  their own commands, styles, and templates to meet specific  requirements or to adhere to institutional guidelines.  \cite{vyshali}
+Version Control: LaTeX's plain-text source files are well suited for version control systems like Git. This enables  collaborative writing, tracking changes, and managing  document revisions effectively.\\ 
+Compatibility: LaTeX documents can be compiled into  various formats, including PDF, DVI (Device Independent),  and PS (PostScript). Its portability and compatibility across  different platforms make it a preferred choice for academic  and technical writing. 
+Community and Support: LaTeX has a large and active user  community that provides extensive documentation, tutorials,  forums, and packages. Many online resources are available  to assist users in learning and mastering LaTeX. 
+\bibliographystyle{unsrt} 
+\footnotesize{\bibliography{References}} 
+\end{document} 
+References.bib 
+@book{latex2e, 
+ author = {Leslie Lamport}, 
+ year = {1994}, 
+ title = {{\LaTeX}: a Document Preparation System},  publisher = {Addison Wesley}, 
+ address = {Massachusetts}, 
+ edition = {2} 
+}
+@article{knuth:1984, 
+ title={Literate Programming}, 
+ author={Donald E. Knuth}, 
+ journal={The Computer Journal}, 
+ volume={27}, 
+ number={2}, 
+ pages={97--111}, 
+ year={1984}, 
+ publisher={Oxford University Press} 
+} 
+@inproceedings{lesk:1977, 
+ title={Computer Typesetting of Technical Journals on  {UNIX}}, 
+ author={Michael Lesk and Brian Kernighan},  booktitle={Proceedings of American Federation of  Information Processing Societies: 1977  National Computer Conference}, 
+ pages={879--888}, 
+ year={1977}, 
+ address={Dallas, Texas} 
+} 
+@conference{vyshali, 
+ title={CM-AODV: An efficient usage of network  bandwidth in AODV protocol}, 
+ author={Ashwini, HK and KP, Vyshali Rao and Ginimav,  Ishwari}, 
+ booktitle={2018 International Conference on Design  Innovations for 3Cs Compute Communicate Control  (ICDI3C)}, 
+ pages={111--114},
+ year={2018}, 
+ organization={IEEE} 
+} 
+@book{texbook, 
+ author = {Donald E. Knuth}, 
+ year = {1986}, 
+ title = {The {\TeX} Book}, 
+ publisher = {Addison-Wesley Professional} 
+} 
+@book{latex:companion, 
+ author = {Frank Mittelbach and Michel Gossens  and Johannes Braams and David Carlisle  and Chris Rowley}, 
+ year = {2004}, 
+ title = {The {\LaTeX} Companion}, 
+ publisher = {Addison-Wesley Professional}, 
+ edition = {2} 
+} 
